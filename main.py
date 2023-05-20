@@ -1,11 +1,13 @@
 import json
 
+from sqlalchemy import exc
+
 from data import db_session
 from config import user_name, user_password, host_name, \
     database_file_name, ABSOLUTE_PROJECT_PATH, port, database_name
 from data.passengers import Passenger
 from data.flights import Flight
-from data.aircrafts import Aircraft
+from data.aircrafts import Aircraft, SeatAircraft
 from data.luggages import Luggage
 from data.maintenances import Maintenance
 from data.employees import Employee
@@ -41,8 +43,27 @@ def set_data_to_db(*args: table_types):
 
 
 def main():
+    print(*get_data_from_db(Employee))
+    try:
+        # suppose the database has been restarted.
+        print(*get_data_from_db(Employee))
+    except exc.DBAPIError as e:
+        # an exception is raised, Connection is invalidated.
+        if e.connection_invalidated:
+            print("Connection was invalidated!")
+
     # set_tests()
-    print(*get_data_from_db(Aircraft), sep='\n')
+    # print(*get_data_from_db(Aircraft), sep='\n')
+
+    # et1 = Employee(first_name="Акакий",
+    #                last_name="Алексеев",
+    #                patronymic="Александрович",
+    #                position="Директор говна"
+    #                )
+    # db_sess.add(et1)
+    # db_sess.commit()
+
+    # print(et1)
 
 
 

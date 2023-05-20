@@ -11,10 +11,10 @@ class Maintenance(SqlAlchemyBase):
     start_time = Column(DateTime)
     end_time = Column(DateTime)
     flight_id = Column(Integer, ForeignKey('flights.id'))
-    employee_id = Column(Integer, ForeignKey('employees.id'))
+    # employee_id = Column(Integer, ForeignKey('employees.id'))
 
     flight = orm.relationship("Flight")
-    employee = orm.relationship("Employee")
+    # employee = orm.relationship("Employee")
 
     def __repr__(self):
         return f"| Maintenance: {self.id} - {self.work_type} - "\

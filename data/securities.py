@@ -9,10 +9,10 @@ class Security(SqlAlchemyBase):
     check_type = Column(String(100))
     check_time = Column(DateTime)
     passenger_id = Column(Integer, ForeignKey('passengers.id'))
-    employee_id = Column(Integer, ForeignKey('employees.id'))
+    # employee_id = Column(Integer, ForeignKey('employees.id'))
 
     passenger = orm.relationship("Passenger")
-    employee = orm.relationship("Employee")
+    # employee = orm.relationship("Employee")
 
     def __repr__(self):
         return f"| Security: {self.id} - "\
