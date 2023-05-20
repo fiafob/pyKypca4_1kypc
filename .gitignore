@@ -4,6 +4,7 @@ users_data.txt
 telegram_data_fill.py
 test.py
 sql_operations.py
+result.txt
 
 venv/
 __pycache__/
