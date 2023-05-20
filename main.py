@@ -1,15 +1,19 @@
+import json
+
 from data import db_session
 from config import user_name, user_password, host_name, \
     database_file_name, ABSOLUTE_PROJECT_PATH, port, database_name
-from data.people import Human
+
 
 db_session.global_init(user_name, user_password, host_name, port, database_name)
+db_sess = db_session.create_session()
+
+def collect_data(source: str, data: str) -> list:
+    raw_data = json.loads(data)
+
 
 def main():
-    db_sess = db_session.create_session()
-
-
-
+    ...
 
 
 if __name__ == "__main__":
