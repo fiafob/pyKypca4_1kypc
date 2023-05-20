@@ -4,5 +4,4 @@ users_data.txt
 telegram_data_fill.py
 
 venv/
-.idea/
 __pycache__/
