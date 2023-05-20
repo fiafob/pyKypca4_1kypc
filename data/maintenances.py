@@ -13,8 +13,8 @@ class Maintenance(SqlAlchemyBase):
     flight_id = Column(Integer, ForeignKey('flights.id'))
     employee_id = Column(Integer, ForeignKey('employees.id'))
 
-    flight = orm.relationship("Flight")
-    employee = orm.relationship("Employee")
+    #flight = orm.relationship("Flight")
+    #employee = orm.relationship("Employee")
 
     def __repr__(self):
         return f"| Maintenance: {self.id} - {self.work_type} - "\

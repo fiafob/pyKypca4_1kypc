@@ -14,7 +14,7 @@ class Flight(SqlAlchemyBase):
     arrival_city = Column(String(50))
     aircraft_id = Column(Integer, ForeignKey('aircrafts.id'))
 
-    aircraft = orm.relationship("Aircraft")
+    #aircraft = orm.relationship("Aircraft")
 
     def __repr__(self):
         return f"| Flight: {self.id} - {self.flight_number} - "\

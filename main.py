@@ -5,7 +5,7 @@ from config import user_name, user_password, host_name, \
     database_file_name, ABSOLUTE_PROJECT_PATH, port, database_name
 from data.passengers import Passenger
 from data.flights import Flight
-from data.aircrafts import Aircraft
+from data.aircrafts import Aircraft, SeatAircraft
 from data.luggages import Luggage
 from data.maintenances import Maintenance
 from data.employees import Employee
@@ -38,33 +38,10 @@ def set_data_to_db(*args: table_types):
         db_sess.add(data)
     db_sess.commit()
 
-
-
 def main():
-    # set_tests()
-    print(*get_data_from_db(Aircraft), sep='\n')
-
+    ...
 
 
 if __name__ == "__main__":
     main()
 
-
-
-# create line in table people
-    '''
-    human = Human()
-    human.name = "Ivan"
-    human.surname = "Ivanov"
-    human.patronymic = "Ivanovich"
-    db_sess.add(human)
-    db_sess.commit()
-    print(human)
-    '''
-
-# select people from table poeople
-    '''
-    for user in db_sess.query(Human).filter((Human.id >= 1) | \
-    (Human.name.notlike("%1%"))):
-        print(user)
-    '''

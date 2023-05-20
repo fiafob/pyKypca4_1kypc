@@ -14,7 +14,7 @@ class Luggage(SqlAlchemyBase):
     destination = Column(String(100))
     passenger_id = Column(Integer, ForeignKey('passengers.id'))
 
-    passenger = orm.relationship("Passenger")
+    #passenger = orm.relationship("Passenger")
 
     def __repr__(self):
         return f"Luggage: {self.id} - {self.luggage_number} - "\

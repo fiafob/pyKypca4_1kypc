@@ -13,8 +13,8 @@ class Passenger(SqlAlchemyBase):
     flight_id = Column(Integer, ForeignKey('flights.id'))
     seat_id = Column(Integer, ForeignKey("seat_aircraft.id"))
 
-    flight = orm.relationship("Flight")
-    seat = orm.relationship("SeatAircraft")
+    #flight = orm.relationship("Flight")
+    #seat = orm.relationship("SeatAircraft")
 
     def __repr__(self):
         return f"| Passenger: {self.id} - {self.first_name} "\

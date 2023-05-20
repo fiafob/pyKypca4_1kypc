@@ -23,9 +23,9 @@ class SeatAircraft(SqlAlchemyBase):
     aircraft_id = Column(Integer, ForeignKey('aircrafts.id'))
     seat_type = Column(String(50))
 
-    aircraft = orm.relationship("Aircraft")
+    #aircraft = orm.relationship("Aircraft")
 
     def __repr__(self):
-        return f"| Seat - {self.id} - {self.row}{self.letter}"\
+        return f"| Seat - {self.id} - {self.seat}"\
             f" - {self.seat_type} - "\
             f"__Aircraft__: {self.aircraft_id} |"
