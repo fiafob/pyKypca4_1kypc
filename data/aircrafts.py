@@ -19,8 +19,7 @@ class Aircraft(SqlAlchemyBase):
 class SeatAircraft(SqlAlchemyBase):
     __tablename__ = 'seat_aircraft'
     id = Column(Integer, primary_key=True)
-    row = Column(Integer)
-    letter = Column(String(2))
+    seat = Column(String(10))
     aircraft_id = Column(Integer, ForeignKey('aircrafts.id'))
     seat_type = Column(String(50))
 

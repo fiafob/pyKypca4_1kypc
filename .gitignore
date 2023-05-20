@@ -3,6 +3,7 @@ config.py
 users_data.txt
 telegram_data_fill.py
 test.py
+sql_operations.py
 
 venv/
 __pycache__/
