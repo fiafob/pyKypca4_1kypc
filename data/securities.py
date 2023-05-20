@@ -13,3 +13,9 @@ class Security(SqlAlchemyBase):
 
     passenger = orm.relationship("Passenger")
     employee = orm.relationship("Employee")
+
+    def __repr__(self):
+        return f"| Security: {self.id} - "\
+                f"{self.check_type} - {self.check_time} - "\
+                f"__Passenger__: {self.passenger_id} - "\
+                f"__Employee__: {self.employee_id} |"

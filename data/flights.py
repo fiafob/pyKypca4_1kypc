@@ -15,3 +15,9 @@ class Flight(SqlAlchemyBase):
     aircraft_id = Column(Integer, ForeignKey('aircrafts.id'))
 
     aircraft = orm.relationship("Aircraft")
+
+    def __repr__(self):
+        return f"| Flight: {self.id} - {self.flight_number} - "\
+            f"{self.departure_city} - {self.arrival_city} - "\
+            f"{self.departure_time} - {self.arrival_time} - "\
+            f"__Aircraft__: {self.aircraft_id} |"

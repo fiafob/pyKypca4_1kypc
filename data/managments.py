@@ -11,3 +11,7 @@ class Management(SqlAlchemyBase):
     budget = Column(Float)
     personnel = Column(Integer)
     schedule = Column(String(500))
+
+    def __repr__(self):
+        return f"| Management: {self.id} - {self.budget} - "\
+            f"{self.personnel} - {self.schedule} |"

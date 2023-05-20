@@ -15,3 +15,9 @@ class Luggage(SqlAlchemyBase):
     passenger_id = Column(Integer, ForeignKey('passengers.id'))
 
     passenger = orm.relationship("Passenger")
+
+    def __repr__(self):
+        return f"Luggage: {self.id} - {self.luggage_number} - "\
+            f"{self.weight} - {self.weight} - {self.type} - "\
+            f"{self.destination} - "\
+            f"__Passenger__: {self.passenger_id} |"

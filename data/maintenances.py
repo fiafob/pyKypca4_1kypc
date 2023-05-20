@@ -15,3 +15,9 @@ class Maintenance(SqlAlchemyBase):
 
     flight = orm.relationship("Flight")
     employee = orm.relationship("Employee")
+
+    def __repr__(self):
+        return f"| Maintenance: {self.id} - {self.work_type} - "\
+            f"{self.start_time} - {self.end_time} - "\
+            f"__Flight__: {self.flight_id} - "\
+            f"__Employee__: {self.employee_id} |"

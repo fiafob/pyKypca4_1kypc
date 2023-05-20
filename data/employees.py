@@ -10,3 +10,6 @@ class Employee(SqlAlchemyBase):
     first_name = Column(String(50))
     last_name = Column(String(50))
     position = Column(String(128))
+
+    def __repr__(self):
+        return f"| Employee:  {self.id} - {self.first_name}|"

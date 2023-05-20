@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33943676-796b-40cf-9efe-f367e0f72b18" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/aircrafts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/employees.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/flights.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/luggages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/maintenances.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/managments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/passengers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/securities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="33943676-796b-40cf-9efe-f367e0f72b18" name="Changes" comment="new tables added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/__all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__all_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/people.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/aircrafts.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/aircrafts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/employees.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/employees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flights.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/flights.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/luggages.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/luggages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/maintenances.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/maintenances.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/managments.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/managments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/passengers.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/passengers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/securities.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/securities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fiafob" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,7 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "fiafob",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/PROJECTS/mirea/pyKypca4_1kypc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -127,6 +129,9 @@
       <list>
         <item itemvalue="Python.test" />
         <item itemvalue="Python.config" />
+        <item itemvalue="Python.config" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -141,14 +146,26 @@
       <workItem from="1684541451550" duration="216000" />
       <workItem from="1684541749508" duration="5352000" />
     </task>
+    <task id="LOCAL-00001" summary="new tables added">
+      <created>1684578365914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684578365914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new tables added" />
+    <option name="LAST_COMMIT_MESSAGE" value="new tables added" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pyKypca4_1kypc$test.coverage" NAME="test Coverage Results" MODIFIED="1684551148630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pyKypca4_1kypc$main.coverage" NAME="main Coverage Results" MODIFIED="1684578246871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyKypca4_1kypc$test.coverage" NAME="test Coverage Results" MODIFIED="1684582506680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyKypca4_1kypc$main.coverage" NAME="main Coverage Results" MODIFIED="1684589700483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyKypca4_1kypc$config.coverage" NAME="config Coverage Results" MODIFIED="1684547076217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
